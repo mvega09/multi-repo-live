@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
-  source = "../../../modules/services/webserver-cluster"
+  source = "github.com/mvega09/modules//services/webserver-cluster?ref=v0.0.1"
 
   cluster_name           = "terramino-cluster-prod"
   db_remote_state_bucket = "my-bucket-mvega09"
